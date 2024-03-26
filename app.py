@@ -7,7 +7,8 @@ if "img_file_buffer" not in st.session_state:
     st.session_state.img_file_buffer = None
 
 modal = Modal(
-    "Camera Modal",  
+    "Camera Modal",
+    key="camera_modal",  # Unique key for the modal  
     # Optional
     padding=20,    # default value
     max_width=744  # default value
